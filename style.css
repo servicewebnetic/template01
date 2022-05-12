@@ -1,0 +1,178 @@
+#texttopbar{
+  text-decoration: none;
+  color: #fff;
+}
+:root{
+  --bg-color: #5eb1d2;
+  --bg-colorr: rgba(174, 239, 240, 0.463);
+  --tx-color: rgb(72, 14, 14);
+}
+*{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.bg-loader{
+  --bg-color: #084d4dcc;
+  --bg-colorr: rgba(5, 18, 78, 0.608);
+}
+.bg-dark{
+  --bg-color: #020730;
+  --bg-colorr: black;
+  --tx-color: rgb(230, 196, 196);
+}
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body{
+  background: radial-gradient(ellipse at top, var(--bg-color), var(--bg-colorr)),
+            radial-gradient(ellipse at bottom, var(--bg-color), var(--bg-colorr));
+  color: var(--tx-color);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#loader {
+  border: 16px solid rgba(54, 52, 52, 0.481);
+  border-radius: 50%;
+  border-top: 16px solid #000dff;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#theme{
+  margin-top: 25%;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#loaderline{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#companynumber{text-align: left;}
+#companyemail{text-align: center;}
+#sociallinks{
+  text-align: right;
+}
+#dhurkaj{
+    padding: 5%; 
+    width: 45%;
+  }
+  .carousel-caption {
+   position: absolute;
+   top:40px
+}
+#footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#message,#email,#name,#phone,#subject{
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.14),rgba(0, 0, 0, 0.222),rgba(0, 0, 0, 0.458));
+}
+.conusform{
+  color: #000000;
+}
+.map-container{
+overflow:hidden;
+padding-top:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:20%;
+top:25%;
+height:80%;
+width:80%;
+position:absolute;
+}
+.dropdown-item.nav-link {
+  background: transparent;
+}
+
+#offadd{
+  padding-top: 50%;
+  text-align: center;
+}
+.main-btn{ background:#208b05; border-color:#027c35; color:#fff;}
+.main-btn:hover{ background:#000ea4;color:#fff;}
+
+  @media only screen and (max-width: 850px) {
+    #email,#name{
+      margin-top: 5%;
+    }
+    #dhurkaj{
+    padding: 5%; 
+    width: 100%;
+  }
+  .dropdown-item.nav-link {
+    text-align: center;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  #caraimg{
+    height: 300px;
+  }
+  .carousel-caption {
+   top: 0;
+  }
+  .map-container{
+    overflow:hidden;
+    /*padding-top:56.25%;*/
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:50%;
+    transform: translate(-50%,0);
+    height:60%;
+    width:80%;
+    position:absolute;
+  }
+  #companynumber{font-size:12px;text-align: center;width: 33%;padding-left: 4.5%;}
+  #companyemail{font-size:12px;text-align: center;width: 33%;padding: 0%}
+  #sociallinks{font-size:12px;text-align: center;width: 30%;padding: 0%;}
+  #topbar{padding: 0%;}
+  .nav-item{
+    text-align: center;
+  }
+  body{
+    background: radial-gradient(ellipse at top, var(--bg-color), var(--bg-colorr)),
+            radial-gradient(ellipse at bottom, var(--bg-color), var(--bg-colorr));
+  }
+  #theme{
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 20px;
+    
+  }
+}
+@media only screen and (max-width: 470px){
+  #companynumber{font-size:12px;text-align: center;width: 50%;padding-left: 4.5%;}
+  #companyemail{font-size:12px;text-align: center;width: 50%;padding: 0%}
+  #sociallinks{display: none;}
+}
